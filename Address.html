@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "Address.css">
+        <title>Address Book</title>
+    </head>
+
+    <body>
+        <header class = "header-content header">
+            <div class = "logo-content">
+                <img src = "logo.png"  alt = "Picture Unavailable">
+                <div>
+                    <span class= "address">Address</span>
+                    <span class = "address book">Book</span>
+                </div>
+            </div>
+        </header>
+        <div class= "form-content">
+        <form class = "form">
+            <div class = "heading">
+                PERSON ADDRESS FORM
+            </div>
+            <div class = "name">
+               <label class = "text-name">Full Name:</label> 
+               <input class = "input" type = "text" placeholder="Enter The Full Name" required>
+               <error-output class = "error"></error-output>
+            </div>
+
+            <div class="fullAddress">
+                <label>Notes:</label>
+                <textarea class="input" placeholder="Address" style="height:100px"></textarea>
+            </div>
+            <div>
+                <select>
+                    <option value="Select City">Select City</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Patiala">Patiala</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Agra">Agra</option>
+                    <option value="New Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+                <select>
+                    <option value="Select State">Select State</option>
+                    <option value="Haryana"></option>
+                    <option value="Punjab"></option>
+                    <option value="Rajasthan"></option>
+                    <option value="Uttar Pradesh"></option>
+                    <option value="New Delhi"></option>
+                    <option value="Maharashtra"></option>
+                    <option value="West Bengal"></option>
+                    <option value="Tamil Nadu"></option>
+                </select>
+                <input class = "input" type = "zipcode" placeholder="Zip Code" required>
+               <error-output class = "error"></error-output>
+
+            </div>
+            <div>
+                <input class = "input" type = "tel" placeholder="Phone Number" required>
+               <error-output class = "error"></error-output>
+            </div>
+
+            
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                
+            </div>
+        </form>
+            
+    </div>
+    </body>
+</html>
